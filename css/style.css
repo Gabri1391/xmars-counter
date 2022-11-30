@@ -11,6 +11,10 @@ body{
     background-size: cover;
 }
 
+.container{
+    position: relative;
+}
+
 .christmas-panel{
     margin-top: 80px;
     width: 420px;
@@ -83,3 +87,41 @@ img{
     font-size: 0.9rem;
     padding-top: 5px;
 }
+
+/* GIFT-PANEL */
+#gift-panel{
+    display: flex;
+    position: absolute;
+    left: 525px;
+    bottom: 20px;
+}
+
+#gift-panel img{
+    padding: 0 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-90px);
+    }
+    60% {
+        transform: rotate(30deg);
+    }
+
+    80%{
+       transform: rotate(-30deg);
+    }
+  }
