@@ -19,25 +19,23 @@
 <body>
     <main>
         <div class="container">
-            <div class="christmas-panel">
+            <div class="christmas-panel text-center">
                 <figure>
                     <img src="img/xmas-is-coming.jpg" alt="christmas is coming!">
                 </figure>
                 <div class="timer-counter">
-                    <div class="timer-square">25
-                        <div class="label">DAYS</div>
-                    </div>
-                    <div class="timer-square">9
-                        <div class="label">HOURS</div>
-                    </div>
-                    <div class="timer-square">34
-                        <div class="label">MIN</div>
-                    </div>
-                    <div class="timer-square">48
-                        <div class="label">SEC</div>
-                    </div>
+                    <div id="days" class="timer-square"></div>
+                    <div  id="hours" class="timer-square"></div>
+                    <div id="minutes" class="timer-square"></div>
+                    <div id="seconds" class="timer-square"></div>
                 </div>
-                <div class="left mt-4">
+                <div class="counter-label">
+                    <div class="timer-label">DAYS</div>
+                    <div class="timer-label">HOURS</div>
+                    <div class="timer-label">MIN</div>
+                    <div class="timer-label">SEC</div>
+                </div>
+                <div class="left mt-2">
                     <strong><i>Left</i></strong>
                 </div>
                 <!-- COPYRIGHT -->
@@ -47,5 +45,7 @@
             </div>
         </div>
     </main>
-</body>
+   <!-- SCRIPT JS -->
+   <script src="js/script.js"></script>
+  </body>
 </html>
